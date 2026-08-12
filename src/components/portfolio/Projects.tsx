@@ -10,7 +10,7 @@ export function Projects() {
       id="projects"
       eyebrow="Key projects & research"
       title="Selected work across water, cities and buildings"
-      description="From national bridge hydrology documentation to participatory city design — projects where analysis, design and community meet."
+      description="From national bridge hydrology documentation to flood risk mapping — projects where analysis, engineering and community meet."
     >
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((p) => (

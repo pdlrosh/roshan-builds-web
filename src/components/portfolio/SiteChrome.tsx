@@ -79,7 +79,7 @@ export function SiteFooter() {
     <footer className="border-t border-border/60 bg-surface">
       <div className="mx-auto grid w-full max-w-6xl gap-2 px-5 py-8 text-sm text-muted-foreground sm:flex sm:items-center sm:justify-between sm:px-8">
         <p>© {new Date().getFullYear()} Roshan Paudel. Kathmandu, Nepal.</p>
-        <p>Water science · Civil engineering · Architectural design</p>
+        <p>Water science · Civil engineering · Hydrology</p>
       </div>
     </footer>
   );

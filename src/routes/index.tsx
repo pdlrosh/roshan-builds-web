@@ -7,9 +7,9 @@ import { Skills } from "@/components/portfolio/Skills";
 import { Contact } from "@/components/portfolio/Contact";
 import { SiteHeader, SiteFooter } from "@/components/portfolio/SiteChrome";
 
-const title = "Roshan Paudel — Civil Engineer, Hydrologist & Designer";
+const title = "Roshan Paudel — Civil Engineer & Hydrologist";
 const description =
-  "Portfolio of Roshan Paudel: M.Sc. Water Science & Engineering (IHE Delft), lecturer, and designer of water supply, sanitary and sustainable building systems in Nepal.";
+  "Portfolio of Roshan Paudel: M.Sc. Water Science & Engineering (IHE Delft), lecturer, and designer of water supply, sanitary and sustainable water infrastructure in Nepal.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
