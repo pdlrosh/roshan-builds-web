@@ -1,3 +1,10 @@
+import bridgeImage from "@/assets/proj-bridge.jpg";
+import cityImage from "@/assets/proj-city.jpg";
+import damImage from "@/assets/proj-dam.jpg";
+import waterImage from "@/assets/proj-water.jpg";
+import floodImage from "@/assets/proj-flood.jpg";
+import watershedImage from "@/assets/proj-watershed.jpg";
+
 export const profile = {
   name: "Roshan Paudel",
   title: "Civil Engineer · Hydrologist · Lecturer",
@@ -52,45 +59,45 @@ export const experience = [
 export const projects = [
   {
     title: "Hydrological Study of Bridges in Nepal",
-    tag: "Recent · Documentation & Modelling",
-    blurb:
-      "Hydrological and hydraulic documentation for bridge crossings — catchment delineation, design flood estimation and scour-relevant hydraulics to support safe, durable crossings.",
-    stack: ["HEC-RAS", "GIS", "Design Flood Analysis"],
+    tag: "Recent · Modelling",
+    image: bridgeImage,
+    blurb: "Catchment delineation, design flood estimation and scour hydraulics for bridge crossings.",
+    stack: ["HEC-RAS", "GIS", "Design Flood"],
   },
   {
-    title: "Our Dream City: Piloting at Pyangaun, Lalitpur",
-    tag: "2022 — 2023 · British Council Nepal",
-    blurb:
-      "Collaboration between Acme Engineering College and Story Cycle to plan a more inclusive, creative and sustainable settlement — participatory design, public space and water-sensitive planning.",
-    stack: ["Urban Planning", "Participatory Design", "Sustainability"],
+    title: "Our Dream City — Pyangaun, Lalitpur",
+    tag: "2022–23 · British Council Nepal",
+    image: cityImage,
+    blurb: "Participatory planning for a more inclusive, water-sensitive settlement.",
+    stack: ["Urban Planning", "Participatory Design"],
   },
   {
-    title: "Vulnerability of Small Storage Structures, Lower Zambesi Basin",
-    tag: "M.Sc. Thesis · IHE Delft / DUPC2",
-    blurb:
-      "Assessment of small storage structures in Mozambique under hydrological extremes, combining dam stability checks with basin-scale hydrological modelling.",
+    title: "Small Storage Structures, Lower Zambesi",
+    tag: "M.Sc. Thesis · IHE Delft",
+    image: damImage,
+    blurb: "Dam stability checks combined with basin-scale hydrological modelling under extremes.",
     stack: ["HEC-HMS", "CADAM", "SWAT"],
   },
   {
-    title: "Water & Sanitary Systems — Stadium and Residences",
+    title: "Water & Sanitary Systems — Stadium & Residences",
     tag: "Practice · Urban Park",
-    blurb:
-      "End-to-end design of potable water distribution, drainage and sewage disposal for a football stadium and multiple residential buildings, aligned to national standards.",
+    image: waterImage,
+    blurb: "Potable water, drainage and sewage design to national standards, with BoQ.",
     stack: ["AutoCAD", "Sanitary Design", "BoQ"],
   },
   {
     title: "Flood Risk & Inundation Mapping",
     tag: "Research theme",
-    blurb:
-      "Hydrodynamic modelling workflows producing inundation and flood-risk maps for river reaches, including 1D/2D simulation of floodplain processes.",
+    image: floodImage,
+    blurb: "1D/2D hydrodynamic modelling producing inundation and flood-risk maps.",
     stack: ["SOBEK-Rural", "HEC-RAS 2D", "Python"],
   },
   {
     title: "Payment for Ecosystem Services in Nepal",
-    tag: "Publication · Multidisciplinary Reviews (2023)",
-    blurb:
-      "Co-authored review of global PES practices with policy recommendations tailored to Nepal's watershed and ecosystem governance context.",
-    stack: ["Policy Research", "Watershed Governance"],
+    tag: "Publication · 2023",
+    image: watershedImage,
+    blurb: "Co-authored review of global PES practice with policy recommendations for Nepal.",
+    stack: ["Policy Research", "Watersheds"],
   },
 ];
 
