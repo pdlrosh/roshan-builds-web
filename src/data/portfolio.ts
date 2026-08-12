@@ -1,6 +1,6 @@
 export const profile = {
   name: "Roshan Paudel",
-  title: "Civil Engineer · Hydrologist · Design Lecturer",
+  title: "Civil Engineer · Hydrologist · Lecturer",
   email: "rosh.pdl@gmail.com",
   phone: "+977 9841816239",
   location: "Naya Naikap, Chandragiri-14, Kathmandu, Nepal",
@@ -105,7 +105,7 @@ export const skillGroups = [
     ],
   },
   {
-    group: "Geospatial & Design",
+    group: "Geospatial & Drafting",
     skills: [
       { name: "GIS for Water Resources", level: 90 },
       { name: "AutoCAD Drafting & Design", level: 88 },
@@ -121,7 +121,6 @@ export const skillTags = [
   "Sanitary & Drainage Networks",
   "Hydropower Engineering",
   "Gravity Dam Stability (CADAM)",
-  "Interior & Exterior Design Coordination",
   "Asset Management",
   "Life Cycle Cost Analysis",
   "Bill of Quantity",

@@ -24,14 +24,18 @@ export function Hero() {
           Roshan Paudel
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-primary-foreground/85 sm:text-xl">
-          A multifaceted professional blending{" "}
-          <span className="font-semibold text-primary-foreground">Civil Engineering</span>,{" "}
-          <span className="font-semibold text-primary-foreground">Hydrology</span> and{" "}
+          Civil engineer and{" "}
+          <span className="font-semibold text-primary-foreground">hydrologist</span> specialising in{" "}
           <span className="font-semibold text-primary-foreground">
-            interior &amp; exterior architectural design
+            water resources, flood modelling
           </span>{" "}
-          — building water systems and spaces that last.
+          and{" "}
+          <span className="font-semibold text-primary-foreground">
+            water supply &amp; sanitary systems
+          </span>{" "}
+          — plus a decade of engineering teaching.
         </p>
+
 
         <div className="mt-9 flex flex-col gap-3 sm:flex-row">
           <Button asChild size="lg" variant="secondary">
