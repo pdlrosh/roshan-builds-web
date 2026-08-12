@@ -34,8 +34,8 @@ export function Contact() {
     <Section
       id="contact"
       eyebrow="Contact"
-      title="Let's talk water, structures or spaces"
-      description="Open to consulting on hydrological studies, water and sanitary system design, and guest lectures."
+      title="Let's talk water"
+      description="Open to consulting on hydrology, water and sanitary design, and guest lectures."
     >
       <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr]">
         <div className="space-y-3">

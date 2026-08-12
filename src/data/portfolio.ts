@@ -20,9 +20,9 @@ export const experience = [
     org: "Himalayan WhiteHouse International College (Purbanchal University)",
     period: "May 2022 — Present",
     points: [
-      "Teach Engineering Hydrology, Water Supply Engineering and Hydropower Engineering to undergraduate civil engineering students.",
-      "Lead academic and international relations partnerships with universities, industry and international institutes.",
-      "Deliver value-added courses in communication, leadership and professional soft skills.",
+      "Teach Engineering Hydrology, Water Supply and Hydropower Engineering.",
+      "Lead academic and international partnerships.",
+      "Deliver leadership and communication courses.",
     ],
   },
   {
@@ -30,9 +30,9 @@ export const experience = [
     org: "Acme Engineering College (Purbanchal University)",
     period: "Nov 2019 — May 2022",
     points: [
-      "Ran departmental operations, mentoring and performance review for faculty members.",
-      "Taught Engineering Hydrology, Hydropower Engineering and Geographic Information Systems.",
-      "Coordinated the 'Our Dream City' inclusive-city pilot with Story Cycle and British Council Nepal.",
+      "Ran departmental operations and faculty mentoring.",
+      "Taught Hydrology, Hydropower and GIS.",
+      "Coordinated the 'Our Dream City' pilot with British Council Nepal.",
     ],
   },
   {
@@ -40,10 +40,10 @@ export const experience = [
     org: "Urban Park, Kathmandu",
     period: "Jul 2019 — Present",
     points: [
-      "Design water supply and sanitary systems for residential buildings and a football stadium.",
-      "Assess water demand, source availability, pressure and quality to size distribution networks.",
-      "Design septic tanks, sewage disposal and drainage networks with capacity, safety and environmental checks.",
-      "Prepare Bills of Quantity and deliver cost-effective designs within budget and schedule.",
+      "Water supply and sanitary design for residences and a football stadium.",
+      "Demand, source and pressure analysis for distribution networks.",
+      "Septic tanks, sewage disposal and drainage network design.",
+      "Bills of Quantity and cost-effective delivery.",
     ],
   },
   {
@@ -51,7 +51,7 @@ export const experience = [
     org: "Acme Engineering College",
     period: "Jul 2015 — Apr 2017",
     points: [
-      "Supported undergraduate teaching, tutorials and laboratory sessions in civil engineering.",
+      "Undergraduate tutorials and laboratory teaching.",
     ],
   },
 ];
