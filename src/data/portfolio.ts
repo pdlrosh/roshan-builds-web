@@ -1,3 +1,10 @@
+import bridgeImage from "@/assets/proj-bridge.jpg";
+import cityImage from "@/assets/proj-city.jpg";
+import damImage from "@/assets/proj-dam.jpg";
+import waterImage from "@/assets/proj-water.jpg";
+import floodImage from "@/assets/proj-flood.jpg";
+import watershedImage from "@/assets/proj-watershed.jpg";
+
 export const profile = {
   name: "Roshan Paudel",
   title: "Civil Engineer · Hydrologist · Lecturer",
@@ -13,9 +20,9 @@ export const experience = [
     org: "Himalayan WhiteHouse International College (Purbanchal University)",
     period: "May 2022 — Present",
     points: [
-      "Teach Engineering Hydrology, Water Supply Engineering and Hydropower Engineering to undergraduate civil engineering students.",
-      "Lead academic and international relations partnerships with universities, industry and international institutes.",
-      "Deliver value-added courses in communication, leadership and professional soft skills.",
+      "Teach Engineering Hydrology, Water Supply and Hydropower Engineering.",
+      "Lead academic and international partnerships.",
+      "Deliver leadership and communication courses.",
     ],
   },
   {
@@ -23,9 +30,9 @@ export const experience = [
     org: "Acme Engineering College (Purbanchal University)",
     period: "Nov 2019 — May 2022",
     points: [
-      "Ran departmental operations, mentoring and performance review for faculty members.",
-      "Taught Engineering Hydrology, Hydropower Engineering and Geographic Information Systems.",
-      "Coordinated the 'Our Dream City' inclusive-city pilot with Story Cycle and British Council Nepal.",
+      "Ran departmental operations and faculty mentoring.",
+      "Taught Hydrology, Hydropower and GIS.",
+      "Coordinated the 'Our Dream City' pilot with British Council Nepal.",
     ],
   },
   {
@@ -33,10 +40,10 @@ export const experience = [
     org: "Urban Park, Kathmandu",
     period: "Jul 2019 — Present",
     points: [
-      "Design water supply and sanitary systems for residential buildings and a football stadium.",
-      "Assess water demand, source availability, pressure and quality to size distribution networks.",
-      "Design septic tanks, sewage disposal and drainage networks with capacity, safety and environmental checks.",
-      "Prepare Bills of Quantity and deliver cost-effective designs within budget and schedule.",
+      "Water supply and sanitary design for residences and a football stadium.",
+      "Demand, source and pressure analysis for distribution networks.",
+      "Septic tanks, sewage disposal and drainage network design.",
+      "Bills of Quantity and cost-effective delivery.",
     ],
   },
   {
@@ -44,7 +51,7 @@ export const experience = [
     org: "Acme Engineering College",
     period: "Jul 2015 — Apr 2017",
     points: [
-      "Supported undergraduate teaching, tutorials and laboratory sessions in civil engineering.",
+      "Undergraduate tutorials and laboratory teaching.",
     ],
   },
 ];
@@ -52,45 +59,45 @@ export const experience = [
 export const projects = [
   {
     title: "Hydrological Study of Bridges in Nepal",
-    tag: "Recent · Documentation & Modelling",
-    blurb:
-      "Hydrological and hydraulic documentation for bridge crossings — catchment delineation, design flood estimation and scour-relevant hydraulics to support safe, durable crossings.",
-    stack: ["HEC-RAS", "GIS", "Design Flood Analysis"],
+    tag: "Recent · Modelling",
+    image: bridgeImage,
+    blurb: "Catchment delineation, design flood estimation and scour hydraulics for bridge crossings.",
+    stack: ["HEC-RAS", "GIS", "Design Flood"],
   },
   {
-    title: "Our Dream City: Piloting at Pyangaun, Lalitpur",
-    tag: "2022 — 2023 · British Council Nepal",
-    blurb:
-      "Collaboration between Acme Engineering College and Story Cycle to plan a more inclusive, creative and sustainable settlement — participatory design, public space and water-sensitive planning.",
-    stack: ["Urban Planning", "Participatory Design", "Sustainability"],
+    title: "Our Dream City — Pyangaun, Lalitpur",
+    tag: "2022–23 · British Council Nepal",
+    image: cityImage,
+    blurb: "Participatory planning for a more inclusive, water-sensitive settlement.",
+    stack: ["Urban Planning", "Participatory Design"],
   },
   {
-    title: "Vulnerability of Small Storage Structures, Lower Zambesi Basin",
-    tag: "M.Sc. Thesis · IHE Delft / DUPC2",
-    blurb:
-      "Assessment of small storage structures in Mozambique under hydrological extremes, combining dam stability checks with basin-scale hydrological modelling.",
+    title: "Small Storage Structures, Lower Zambesi",
+    tag: "M.Sc. Thesis · IHE Delft",
+    image: damImage,
+    blurb: "Dam stability checks combined with basin-scale hydrological modelling under extremes.",
     stack: ["HEC-HMS", "CADAM", "SWAT"],
   },
   {
-    title: "Water & Sanitary Systems — Stadium and Residences",
+    title: "Water & Sanitary Systems — Stadium & Residences",
     tag: "Practice · Urban Park",
-    blurb:
-      "End-to-end design of potable water distribution, drainage and sewage disposal for a football stadium and multiple residential buildings, aligned to national standards.",
+    image: waterImage,
+    blurb: "Potable water, drainage and sewage design to national standards, with BoQ.",
     stack: ["AutoCAD", "Sanitary Design", "BoQ"],
   },
   {
     title: "Flood Risk & Inundation Mapping",
     tag: "Research theme",
-    blurb:
-      "Hydrodynamic modelling workflows producing inundation and flood-risk maps for river reaches, including 1D/2D simulation of floodplain processes.",
+    image: floodImage,
+    blurb: "1D/2D hydrodynamic modelling producing inundation and flood-risk maps.",
     stack: ["SOBEK-Rural", "HEC-RAS 2D", "Python"],
   },
   {
     title: "Payment for Ecosystem Services in Nepal",
-    tag: "Publication · Multidisciplinary Reviews (2023)",
-    blurb:
-      "Co-authored review of global PES practices with policy recommendations tailored to Nepal's watershed and ecosystem governance context.",
-    stack: ["Policy Research", "Watershed Governance"],
+    tag: "Publication · 2023",
+    image: watershedImage,
+    blurb: "Co-authored review of global PES practice with policy recommendations for Nepal.",
+    stack: ["Policy Research", "Watersheds"],
   },
 ];
 
