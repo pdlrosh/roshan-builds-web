@@ -7,7 +7,7 @@ import watershedImage from "@/assets/proj-watershed.jpg";
 
 export const profile = {
   name: "Roshan Paudel",
-  title: "Civil Engineer · Hydrologist · Lecturer",
+  title: "Civil Engineer · Hydrologist · Assistant Professor",
   email: "rosh.pdl@gmail.com",
   phone: "+977 9841816239",
   location: "Naya Naikap, Chandragiri-14, Kathmandu, Nepal",
@@ -57,7 +57,7 @@ export const projects = [
     tag: "M.Sc. Thesis · IHE Delft",
     image: damImage,
     blurb: "Dam stability checks combined with basin-scale hydrological modelling under extremes.",
-    stack: ["HEC-HMS", "CADAM", "SWAT"],
+    stack: ["HEC-HMS", "CADAM", "Basin Modelling"],
   },
   {
     title: "Water & Sanitary Systems — Stadium & Residences",
