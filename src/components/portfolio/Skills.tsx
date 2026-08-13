@@ -8,7 +8,7 @@ const groupIcons = [Waves, Map];
 
 export function Skills() {
   return (
-    <Section id="skills" muted eyebrow="Skills" title="Tools I work in every week">
+    <Section id="skills" muted eyebrow="Skills" title="Tools I use">
       <div className="grid gap-6 lg:grid-cols-2">
         {skillGroups.map((group, i) => {
           const Icon = groupIcons[i] ?? Waves;
