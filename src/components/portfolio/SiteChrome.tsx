@@ -21,7 +21,7 @@ export function SiteHeader() {
             Roshan Paudel
           </span>
           <span className="block truncate text-xs text-muted-foreground">
-            Civil Engineer · Hydrologist
+            Civil Engineer · Hydrologist · Assistant Professor
           </span>
         </a>
 
