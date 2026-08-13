@@ -41,12 +41,6 @@ export function Hero() {
           </ul>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg">
-              <a href={resumeAsset.url} download="Roshan-Paudel-Resume.pdf">
-                <ArrowDownToLine className="size-4" />
-                Download Resume
-              </a>
-            </Button>
             <Button asChild size="lg" variant="outline">
               <a href={profile.linkedin} target="_blank" rel="noreferrer">
                 <Linkedin className="size-4" />
