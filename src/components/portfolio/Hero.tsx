@@ -1,8 +1,6 @@
-import { ArrowDownToLine, Linkedin, MapPin, Mail, Phone, Droplets, Waves, GraduationCap } from "lucide-react";
+import { Linkedin, MapPin, Mail, Phone, Droplets, Waves, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-river.jpg";
-import portraitAsset from "@/assets/roshan-portrait-2.png.asset.json";
-import resumeAsset from "@/assets/resume.pdf.asset.json";
 import { profile } from "@/data/portfolio";
 
 const stats = [
@@ -43,12 +41,6 @@ export function Hero() {
           </ul>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg">
-              <a href={resumeAsset.url} download="Roshan-Paudel-Resume.pdf">
-                <ArrowDownToLine className="size-4" />
-                Download Resume
-              </a>
-            </Button>
             <Button asChild size="lg" variant="outline">
               <a href={profile.linkedin} target="_blank" rel="noreferrer">
                 <Linkedin className="size-4" />
@@ -73,17 +65,6 @@ export function Hero() {
               <span className="truncate">{profile.phone}</span>
             </div>
           </dl>
-        </div>
-
-        <div className="relative mx-auto w-full max-w-sm">
-          <div className="absolute -inset-3 rounded-[2rem] bg-accent-gradient opacity-20 blur-2xl" />
-          <img
-            src={portraitAsset.url}
-            alt="Portrait of Roshan Paudel"
-            width={1252}
-            height={1252}
-            className="relative aspect-square w-full rounded-[1.75rem] border border-border/70 object-cover shadow-lift"
-          />
         </div>
       </div>
     </section>
