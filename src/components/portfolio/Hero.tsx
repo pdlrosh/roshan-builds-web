@@ -1,7 +1,7 @@
 import { ArrowDownToLine, Linkedin, MapPin, Mail, Phone, Droplets, Waves, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-river.jpg";
-import portraitAsset from "@/assets/roshan-portrait.png.asset.json";
+import portraitAsset from "@/assets/roshan-portrait-2.png.asset.json";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
 import { profile } from "@/data/portfolio";
 
