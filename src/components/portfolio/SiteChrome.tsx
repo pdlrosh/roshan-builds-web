@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Menu, X, ArrowDownToLine } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import resumeAsset from "@/assets/resume.pdf.asset.json";
 
 const links = [
   { href: "#about", label: "About" },
@@ -22,7 +21,7 @@ export function SiteHeader() {
             Roshan Paudel
           </span>
           <span className="block truncate text-xs text-muted-foreground">
-            Civil Engineer · Hydrologist
+            Civil Engineer · Hydrologist · Assistant Professor
           </span>
         </a>
 
@@ -38,12 +37,6 @@ export function SiteHeader() {
               </a>
             ))}
           </nav>
-          <Button asChild size="sm" className="ml-2 hidden sm:inline-flex">
-            <a href={resumeAsset.url} download="Roshan-Paudel-Resume.pdf">
-              <ArrowDownToLine className="size-4" />
-              Resume
-            </a>
-          </Button>
           <Button
             variant="ghost"
             size="icon"

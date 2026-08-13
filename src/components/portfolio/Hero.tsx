@@ -25,7 +25,7 @@ export function Hero() {
             Roshan Paudel
           </h1>
           <p className="mt-4 text-lg text-muted-foreground sm:text-xl">
-            Civil Engineer · Hydrologist · Lecturer
+            {profile.title}
           </p>
 
           <ul className="mt-8 flex flex-wrap gap-2">

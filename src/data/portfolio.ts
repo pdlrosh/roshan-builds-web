@@ -7,7 +7,7 @@ import watershedImage from "@/assets/proj-watershed.jpg";
 
 export const profile = {
   name: "Roshan Paudel",
-  title: "Civil Engineer · Hydrologist · Lecturer",
+  title: "Civil Engineer · Hydrologist · Assistant Professor",
   email: "rosh.pdl@gmail.com",
   phone: "+977 9841816239",
   location: "Naya Naikap, Chandragiri-14, Kathmandu, Nepal",
@@ -16,43 +16,24 @@ export const profile = {
 
 export const experience = [
   {
-    role: "Lecturer / Research & International Relations Officer",
+    role: "Research Head / Assistant Professor, Department of Civil Engineering",
     org: "Himalayan WhiteHouse International College (Purbanchal University)",
     period: "May 2022 — Present",
-    points: [
-      "Teach Engineering Hydrology, Water Supply and Hydropower Engineering.",
-      "Lead academic and international partnerships.",
-      "Deliver leadership and communication courses.",
-    ],
   },
   {
     role: "Deputy Head / Lecturer, Department of Civil Engineering",
     org: "Acme Engineering College (Purbanchal University)",
     period: "Nov 2019 — May 2022",
-    points: [
-      "Ran departmental operations and faculty mentoring.",
-      "Taught Hydrology, Hydropower and GIS.",
-      "Coordinated the 'Our Dream City' pilot with British Council Nepal.",
-    ],
   },
   {
-    role: "Civil Engineer (Part-time)",
+    role: "Civil Engineer",
     org: "Urban Park, Kathmandu",
     period: "Jul 2019 — Present",
-    points: [
-      "Water supply and sanitary design for residences and a football stadium.",
-      "Demand, source and pressure analysis for distribution networks.",
-      "Septic tanks, sewage disposal and drainage network design.",
-      "Bills of Quantity and cost-effective delivery.",
-    ],
   },
   {
     role: "Assistant Lecturer, Department of Civil Engineering",
     org: "Acme Engineering College",
     period: "Jul 2015 — Apr 2017",
-    points: [
-      "Undergraduate tutorials and laboratory teaching.",
-    ],
   },
 ];
 
@@ -76,7 +57,7 @@ export const projects = [
     tag: "M.Sc. Thesis · IHE Delft",
     image: damImage,
     blurb: "Dam stability checks combined with basin-scale hydrological modelling under extremes.",
-    stack: ["HEC-HMS", "CADAM", "SWAT"],
+    stack: ["HEC-HMS", "CADAM", "Basin Modelling"],
   },
   {
     title: "Water & Sanitary Systems — Stadium & Residences",
@@ -107,7 +88,6 @@ export const skillGroups = [
     skills: [
       { name: "HEC-RAS (1D/2D)", level: 92 },
       { name: "HEC-HMS", level: 85 },
-      { name: "SWAT", level: 75 },
       { name: "SOBEK-Rural", level: 72 },
     ],
   },
@@ -115,8 +95,8 @@ export const skillGroups = [
     group: "Geospatial & Drafting",
     skills: [
       { name: "GIS for Water Resources", level: 90 },
-      { name: "AutoCAD Drafting & Design", level: 88 },
       { name: "Flood Risk Mapping", level: 86 },
+      { name: "Groundwater Potential Mapping", level: 80 },
       { name: "Python", level: 70 },
     ],
   },
@@ -129,7 +109,6 @@ export const skillTags = [
   "Hydropower Engineering",
   "Gravity Dam Stability (CADAM)",
   "Asset Management",
-  "Life Cycle Cost Analysis",
   "Bill of Quantity",
   "MS Office",
 ];
@@ -137,14 +116,14 @@ export const skillTags = [
 export const credentials = [
   {
     label: "M.Sc. Water Science & Engineering",
-    detail: "IHE Delft, the Netherlands — Hydrology & Water Resources (7.7/10)",
+    detail: "IHE Delft, the Netherlands — Hydrology & Water Resources",
   },
   {
     label: "B.E. Civil Engineering",
     detail: "Thapathali Engineering Campus, Tribhuvan University",
   },
   {
-    label: "NAAN Joint Secretary",
-    detail: "Netherlands Alumni Association of Nepal, 2022 — Present",
+    label: "Chair",
+    detail: "IWA-YWP Nepal, International Water Association (IWA), Young Water Professionals (YWP) - Nepal Chapter, 2024 — Present",
   },
 ];
