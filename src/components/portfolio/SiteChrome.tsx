@@ -37,12 +37,6 @@ export function SiteHeader() {
               </a>
             ))}
           </nav>
-          <Button asChild size="sm" className="ml-2 hidden sm:inline-flex">
-            <a href={resumeAsset.url} download="Roshan-Paudel-Resume.pdf">
-              <ArrowDownToLine className="size-4" />
-              Resume
-            </a>
-          </Button>
           <Button
             variant="ghost"
             size="icon"
