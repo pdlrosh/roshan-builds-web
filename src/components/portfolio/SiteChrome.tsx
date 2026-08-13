@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Menu, X, ArrowDownToLine } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import resumeAsset from "@/assets/resume.pdf.asset.json";
 
 const links = [
   { href: "#about", label: "About" },
