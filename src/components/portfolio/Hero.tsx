@@ -66,17 +66,6 @@ export function Hero() {
             </div>
           </dl>
         </div>
-
-        <div className="relative mx-auto w-full max-w-sm">
-          <div className="absolute -inset-3 rounded-[2rem] bg-accent-gradient opacity-20 blur-2xl" />
-          <img
-            src={portraitAsset.url}
-            alt="Portrait of Roshan Paudel"
-            width={1252}
-            height={1252}
-            className="relative aspect-square w-full rounded-[1.75rem] border border-border/70 object-cover shadow-lift"
-          />
-        </div>
       </div>
     </section>
   );
