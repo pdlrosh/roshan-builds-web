@@ -144,10 +144,6 @@ export const credentials = [
     detail: "Thapathali Engineering Campus, Tribhuvan University",
   },
   {
-    label: "Nepal Engineering Council",
-    detail: "Registered Civil Engineer, 'A' Category — Reg. No. 10715",
-  },
-  {
     label: "NAAN Joint Secretary",
     detail: "Netherlands Alumni Association of Nepal, 2022 — Present",
   },
