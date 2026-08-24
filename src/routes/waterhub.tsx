@@ -5,6 +5,7 @@ import { SiteHeader, SiteFooter } from "@/components/portfolio/SiteChrome";
 import heroImage from "@/assets/hero-river.jpg";
 
 const WATERHUB_URL = "https://labs.google.com/pomelli/website/8U4Q5gaIwulcBuQFz0iOYf";
+const YOUTUBE_URL = "https://www.youtube.com/@WaterHubNepal";
 const title = "WaterHub Nepal — Water Science Channel by Roshan Paudel";
 const description =
   "WaterHub Nepal shares sustainable water management practices from around the world and translates complex civil engineering into simple Nepali explainer videos for Nepal.";
