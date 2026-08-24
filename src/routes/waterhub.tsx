@@ -80,7 +80,7 @@ function WaterHubPage() {
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href={WATERHUB_URL} target="_blank" rel="noreferrer">
+                <a href={YOUTUBE_URL} target="_blank" rel="noreferrer">
                   <Youtube className="size-4" />
                   Watch the channel
                 </a>
