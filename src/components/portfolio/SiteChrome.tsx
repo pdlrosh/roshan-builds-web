@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "@tanstack/react-router";
 
 const links = [
   { href: "#about", label: "About" },
@@ -36,6 +37,12 @@ export function SiteHeader() {
                 {l.label}
               </a>
             ))}
+            <Link
+              to="/waterhub"
+              className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+            >
+              WaterHub Nepal
+            </Link>
           </nav>
           <Button
             variant="ghost"
@@ -61,6 +68,13 @@ export function SiteHeader() {
               {l.label}
             </a>
           ))}
+          <Link
+            to="/waterhub"
+            onClick={() => setOpen(false)}
+            className="block rounded-md px-2 py-2.5 text-sm font-medium text-muted-foreground hover:bg-secondary hover:text-foreground"
+          >
+            WaterHub Nepal
+          </Link>
         </nav>
       ) : null}
     </header>
