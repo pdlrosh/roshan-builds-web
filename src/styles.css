@@ -100,6 +100,26 @@
     oklch(0.42 0.08 195 / 0.72) 100%
   );
   --gradient-accent: linear-gradient(90deg, var(--accent), oklch(0.62 0.1 205));
+  --gold: oklch(0.68 0.11 82);
+  --gold-foreground: oklch(0.18 0.03 235);
+  --deep: oklch(0.34 0.07 240);
+  --deep-foreground: oklch(0.97 0.006 210);
+  --gradient-gold: linear-gradient(140deg, oklch(0.86 0.09 90), oklch(0.62 0.12 78));
+  --gradient-hero-veil: linear-gradient(
+    100deg,
+    oklch(0.17 0.04 240 / 0.94) 0%,
+    oklch(0.19 0.045 235 / 0.9) 34%,
+    oklch(0.22 0.05 230 / 0.6) 52%,
+    oklch(0.24 0.05 225 / 0.12) 68%,
+    transparent 82%
+  );
+  --gradient-hero-veil-mobile: linear-gradient(
+    to top,
+    oklch(0.17 0.04 240 / 0.96) 0%,
+    oklch(0.18 0.04 238 / 0.9) 46%,
+    oklch(0.2 0.045 232 / 0.55) 72%,
+    oklch(0.22 0.05 228 / 0.25) 100%
+  );
 }
 
 .dark {
