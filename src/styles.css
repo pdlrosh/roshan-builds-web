@@ -181,6 +181,14 @@
   background-image: var(--gradient-accent);
 }
 
+@utility bg-hero-veil {
+  background-image: var(--gradient-hero-veil-mobile);
+
+  @media (min-width: 768px) {
+    background-image: var(--gradient-hero-veil);
+  }
+}
+
 @utility text-eyebrow {
   font-size: 0.75rem;
   letter-spacing: 0.18em;
