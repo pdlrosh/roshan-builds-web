@@ -1,68 +1,81 @@
-import { Linkedin, MapPin, Mail, Phone, Droplets, Waves, GraduationCap } from "lucide-react";
+import { Linkedin, MapPin, Mail, Phone, BookOpen, LayoutGrid } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-river.jpg";
+import { HeroMarks } from "@/components/portfolio/HeroMarks";
+import heroBanner from "@/assets/hero-banner.jpg";
 import { profile } from "@/data/portfolio";
-
-const stats = [
-  { icon: GraduationCap, label: "M.Sc. IHE Delft" },
-  { icon: Droplets, label: "Hydrology & floods" },
-  { icon: Waves, label: "Water & sanitary design" },
-];
 
 export function Hero() {
   return (
-    <section id="home" className="relative isolate overflow-hidden bg-surface">
+    <section id="home" className="relative isolate overflow-hidden bg-ink">
       <img
-        src={heroImage}
+        src={heroBanner}
         alt=""
         aria-hidden="true"
-        className="absolute inset-y-0 right-0 hidden h-full w-1/2 object-cover opacity-20 lg:block"
+        width={1920}
+        height={1080}
+        loading="eager"
+        className="absolute inset-0 size-full object-cover object-[80%_12%] md:object-[60%_center]"
       />
-      <div className="relative mx-auto grid w-full max-w-6xl items-center gap-12 px-5 py-20 sm:px-8 md:py-28 lg:grid-cols-[1.1fr_0.9fr]">
-        <div>
-          <p className="text-eyebrow text-primary">Hello, I'm</p>
-          <h1 className="mt-3 text-4xl font-bold text-foreground sm:text-5xl md:text-6xl">
+      <div className="bg-hero-veil absolute inset-0" />
+
+      <div className="relative mx-auto w-full max-w-6xl px-5 pt-[16rem] pb-14 sm:px-8 sm:pt-[20rem] md:grid md:grid-cols-[minmax(0,0.62fr)_minmax(0,0.38fr)] md:py-28 md:pt-24 lg:py-32">
+        <div className="max-w-xl">
+          <HeroMarks />
+
+          <h1 className="mt-7 font-display text-4xl font-bold tracking-tight text-deep-foreground sm:text-5xl lg:text-6xl">
             Roshan Paudel
           </h1>
-          <p className="mt-4 text-lg text-muted-foreground sm:text-xl">
-            {profile.title}
+          <p className="text-eyebrow mt-4 text-gold">
+            Civil Engineer <span className="text-deep-foreground/40">|</span> Researcher{" "}
+            <span className="text-deep-foreground/40">|</span> Educator
           </p>
 
-          <ul className="mt-8 flex flex-wrap gap-2">
-            {stats.map((s) => (
-              <li
-                key={s.label}
-                className="flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium shadow-soft"
-              >
-                <s.icon className="size-4 text-accent-foreground" />
-                {s.label}
-              </li>
-            ))}
-          </ul>
+          <span className="mt-6 block h-px w-16 bg-gold/70" />
+
+          <p className="mt-6 max-w-md text-lg text-deep-foreground/85">
+            Building sustainable solutions for a better tomorrow.
+          </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg" variant="outline">
-              <a href={profile.linkedin} target="_blank" rel="noreferrer">
-                <Linkedin className="size-4" />
-                Connect on LinkedIn
+            <Button asChild size="lg" variant="gold">
+              <a href="#projects">
+                <LayoutGrid className="size-4" />
+                Explore Key Projects
+              </a>
+            </Button>
+            <Button asChild size="lg" variant="deep">
+              <a href={profile.publications} target="_blank" rel="noreferrer">
+                <BookOpen className="size-4" />
+                View Publications
               </a>
             </Button>
           </div>
 
-          <dl className="mt-12 grid gap-3 text-sm text-muted-foreground sm:grid-cols-3">
+          <dl className="mt-12 grid gap-3 text-sm text-deep-foreground/75 sm:grid-cols-2 lg:grid-cols-3">
             <div className="flex min-w-0 items-center gap-2">
-              <MapPin className="size-4 shrink-0 text-primary" />
+              <MapPin className="size-4 shrink-0 text-gold" />
               <span className="truncate">Kathmandu, Nepal</span>
             </div>
             <div className="flex min-w-0 items-center gap-2">
-              <Mail className="size-4 shrink-0 text-primary" />
+              <Mail className="size-4 shrink-0 text-gold" />
               <a className="truncate hover:underline" href={`mailto:${profile.email}`}>
                 {profile.email}
               </a>
             </div>
             <div className="flex min-w-0 items-center gap-2">
-              <Phone className="size-4 shrink-0 text-primary" />
+              <Phone className="size-4 shrink-0 text-gold" />
               <span className="truncate">{profile.phone}</span>
+            </div>
+            <div className="flex min-w-0 items-center gap-2">
+              <Linkedin className="size-4 shrink-0 text-gold" />
+              <a
+                className="truncate hover:underline"
+                href={profile.linkedin}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Connect on LinkedIn
+              </a>
             </div>
           </dl>
         </div>
