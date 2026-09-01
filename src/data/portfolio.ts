@@ -12,6 +12,8 @@ export const profile = {
   phone: "+977 9841816239",
   location: "Naya Naikap, Chandragiri-14, Kathmandu, Nepal",
   linkedin: "https://np.linkedin.com/in/roshan-paudel-67926baa",
+  // TODO: replace with Google Scholar / ResearchGate profile URL when provided
+  publications: "#projects",
 };
 
 export const experience = [
