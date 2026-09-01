@@ -13,9 +13,14 @@ const marks = [
   },
 ];
 
-export function HeroMarks() {
+interface HeroMarksProps {
+  gradientId?: string;
+  className?: string;
+}
+
+export function HeroMarks({ gradientId = "heroGoldStroke", className }: HeroMarksProps) {
   return (
-    <div className="flex items-center gap-1.5" aria-hidden="true">
+    <div className={"flex items-center gap-1.5 " + (className ?? "")} aria-hidden="true">
       {marks.map((m, i) => (
         <div key={m.label} className="flex items-center gap-1.5">
           {i > 0 ? <span className="h-px w-4 bg-gold/60 sm:w-5" /> : null}
@@ -24,13 +29,13 @@ export function HeroMarks() {
               viewBox="0 0 64 64"
               className="size-8 sm:size-9"
               fill="none"
-              stroke="url(#heroGoldStroke)"
+              stroke={`url(#${gradientId})`}
               strokeWidth={2.6}
               strokeLinecap="round"
               strokeLinejoin="round"
             >
               <defs>
-                <linearGradient id="heroGoldStroke" x1="0" y1="0" x2="1" y2="1">
+                <linearGradient id={gradientId} x1="0" y1="0" x2="1" y2="1">
                   <stop offset="0%" stopColor="oklch(0.92 0.08 92)" />
                   <stop offset="45%" stopColor="oklch(0.78 0.12 85)" />
                   <stop offset="100%" stopColor="oklch(0.56 0.11 72)" />
