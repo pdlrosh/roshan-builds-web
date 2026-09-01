@@ -14,7 +14,7 @@ export function Hero() {
         width={1920}
         height={1080}
         loading="eager"
-        className="absolute inset-0 size-full object-cover object-[72%_center] md:object-[60%_center]"
+        className="absolute inset-0 size-full object-cover object-[80%_12%] md:object-[60%_center]"
       />
       <div className="bg-hero-veil absolute inset-0" />
 
