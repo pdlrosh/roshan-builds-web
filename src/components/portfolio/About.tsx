@@ -4,6 +4,7 @@ import {
   Presentation,
   Handshake,
   ExternalLink,
+  ArrowRight,
 } from "lucide-react";
 import { profile } from "@/data/portfolio";
 import { HeroMarks } from "./HeroMarks";
