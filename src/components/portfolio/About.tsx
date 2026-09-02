@@ -135,26 +135,20 @@ export function About() {
           ))}
 
           {/* Centered professional vision */}
-          <div className="relative mx-auto max-w-2xl py-4">
-            <div className="relative overflow-hidden rounded-3xl border border-border/70 bg-surface shadow-soft">
+          <div className="relative mx-auto max-w-md py-6 text-center">
+            <div className="mx-auto w-56 overflow-hidden rounded-3xl border border-gold/30 bg-surface shadow-soft sm:w-64">
               <img
                 src={portrait.url}
                 alt="Roshan Paudel, civil engineer and hydrologist"
                 loading="lazy"
-                className="h-72 w-full object-cover object-top sm:h-96"
+                className="aspect-[4/5] w-full object-cover object-[50%_15%]"
               />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-deep/90 via-deep/60 to-transparent p-6 pt-16 text-center">
-                <p className="text-eyebrow text-gold">The professional vision</p>
-                <p className="mx-auto mt-2 max-w-md text-base font-medium leading-relaxed text-primary-foreground">
-                  Advancing water infrastructure and hydrological education for a resilient
-                  tomorrow.
-                </p>
-              </div>
             </div>
-            <HeroMarks
-              gradientId="aboutGoldStroke"
-              className="mt-6 justify-center"
-            />
+            <HeroMarks gradientId="aboutGoldStroke" className="mt-5 justify-center" />
+            <p className="text-eyebrow mt-5 text-accent-foreground/70">The professional vision</p>
+            <p className="mx-auto mt-2 max-w-sm text-base font-medium leading-relaxed text-foreground">
+              Advancing water infrastructure and hydrological education for a resilient tomorrow.
+            </p>
           </div>
 
           {after.map((item, i) => (
