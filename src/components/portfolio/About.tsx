@@ -153,7 +153,7 @@ export function About() {
             </div>
             <HeroMarks
               gradientId="aboutGoldStroke"
-              className="mt-6 justify-center md:absolute md:-right-16 md:top-1/2 md:mt-0 md:-translate-y-1/2 md:flex-col md:gap-4"
+              className="mt-6 justify-center"
             />
           </div>
 
