@@ -90,10 +90,10 @@ function MilestoneCard({ item, align }: { item: Milestone; align: "left" | "righ
           </span>
           <p className="text-eyebrow text-accent-foreground/70">{item.phase}</p>
         </div>
-        <h3 className="mt-4 text-lg font-semibold text-foreground">{item.title}</h3>
+        <h3 className="mt-4 text-xl font-semibold text-foreground">{item.title}</h3>
         <ul className="mt-3 space-y-2">
           {item.points.map((p) => (
-            <li key={p} className="text-sm leading-relaxed text-muted-foreground">
+            <li key={p} className="text-base leading-relaxed text-muted-foreground">
               {p}
             </li>
           ))}
