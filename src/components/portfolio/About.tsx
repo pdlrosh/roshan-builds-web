@@ -140,18 +140,13 @@ export function About() {
           ))}
 
           {/* Centered professional vision */}
-          <div className="relative mx-auto max-w-md py-6 text-center">
-            <div className="mx-auto w-56 overflow-hidden rounded-3xl border border-gold/30 bg-surface shadow-soft sm:w-64">
-              <img
-                src={portrait.url}
-                alt="Roshan Paudel, civil engineer and hydrologist"
-                loading="lazy"
-                className="aspect-[4/5] w-full object-cover object-[50%_15%]"
-              />
-            </div>
-            <HeroMarks gradientId="aboutGoldStroke" className="mt-5 justify-center" />
-            <p className="text-eyebrow mt-5 text-accent-foreground/70">The professional vision</p>
-            <p className="mx-auto mt-2 max-w-sm text-base font-medium leading-relaxed text-foreground">
+          <div className="relative mx-auto max-w-md py-4 text-center">
+            <span className="mx-auto grid size-16 place-items-center rounded-full bg-secondary ring-1 ring-gold/40">
+              <Target className="size-7 text-gold" strokeWidth={1.8} />
+            </span>
+            <HeroMarks gradientId="aboutGoldStroke" className="mt-4 justify-center" />
+            <p className="text-eyebrow mt-4 text-accent-foreground/70">The professional vision</p>
+            <p className="mx-auto mt-2 max-w-sm text-lg font-medium leading-relaxed text-foreground">
               Advancing water infrastructure and hydrological education for a resilient tomorrow.
             </p>
           </div>
