@@ -107,7 +107,11 @@ function MilestoneCard({ item, align }: { item: Milestone; align: "left" | "righ
             }
           >
             {item.link.label}
-            <ExternalLink className="size-3.5" />
+            {item.link.href.startsWith("#") ? (
+              <ArrowRight className="size-3.5" />
+            ) : (
+              <ExternalLink className="size-3.5" />
+            )}
           </a>
         ) : null}
       </article>
