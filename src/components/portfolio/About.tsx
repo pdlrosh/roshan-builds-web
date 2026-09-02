@@ -10,7 +10,6 @@ import {
 import { profile } from "@/data/portfolio";
 import { HeroMarks } from "./HeroMarks";
 import { Section } from "./Section";
-import portrait from "@/assets/roshan-portrait-2.png.asset.json";
 
 type Milestone = {
   phase: string;
