@@ -5,6 +5,7 @@ import {
   Handshake,
   ExternalLink,
   ArrowRight,
+  Target,
 } from "lucide-react";
 import { profile } from "@/data/portfolio";
 import { HeroMarks } from "./HeroMarks";
