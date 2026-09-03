@@ -1,7 +1,6 @@
 import {
   GraduationCap,
   ScrollText,
-  Presentation,
   Handshake,
   ExternalLink,
   ArrowRight,
@@ -11,11 +10,16 @@ import { profile } from "@/data/portfolio";
 import { HeroMarks } from "./HeroMarks";
 import { Section } from "./Section";
 
+type MilestonePoint = {
+  label: string;
+  detail: string;
+};
+
 type Milestone = {
   phase: string;
   title: string;
   icon: typeof GraduationCap;
-  points: string[];
+  points: MilestonePoint[];
   link?: { label: string; href: string };
 };
 
@@ -25,17 +29,17 @@ const before: Milestone[] = [
     title: "Academic Foundations",
     icon: GraduationCap,
     points: [
-      "M.Sc. Water Science & Engineering — IHE Delft, the Netherlands",
-      "B.E. Civil Engineering — Thapathali Campus, Tribhuvan University",
+      { label: "M.Sc. Water Science & Engineering", detail: "IHE Delft, the Netherlands" },
+      { label: "B.E. Civil Engineering", detail: "Thapathali Campus, Tribhuvan University" },
     ],
   },
   {
     phase: "Past / Present · Research",
-    title: "Applied Research & Publications",
+    title: "Research & Publications",
     icon: ScrollText,
     points: [
-      "Published work on payment for ecosystem services in Nepal",
-      "Thesis on small storage structures & vulnerability in the Lower Zambesi",
+      { label: "Payment for ecosystem services", detail: "Co-authored publication on Nepal" },
+      { label: "Small storage structures & vulnerability", detail: "M.Sc. thesis, Lower Zambesi" },
     ],
     link: { label: "View publications", href: profile.publications },
   },
@@ -44,24 +48,23 @@ const before: Milestone[] = [
 const after: Milestone[] = [
   {
     phase: "Present · Education",
-    title: "Academic Leadership & Mentorship",
-    icon: Presentation,
+    title: "Teaching & Leadership",
+    icon: GraduationCap,
     points: [
-      "Research Head / Assistant Professor, Department of Civil Engineering",
-      "10+ years teaching Engineering Hydrology & Water Supply Engineering",
+      { label: "Research Head / Assistant Professor", detail: "Department of Civil Engineering" },
+      { label: "10+ years teaching", detail: "Engineering Hydrology & Water Supply Engineering" },
     ],
   },
   {
     phase: "Future · Direction",
-    title: "Sustainable Infrastructure Design",
+    title: "Sustainable Infrastructure",
     icon: Handshake,
     points: [
-      "Water-sensitive urban systems and climate-resilient hydrology",
-      "Chair, IWA-YWP Nepal — building the next generation of water professionals",
+      { label: "Water-sensitive urban systems", detail: "Climate-resilient hydrology" },
+      { label: "Chair, IWA-YWP Nepal", detail: "Building the next generation of water professionals" },
     ],
     link: { label: "Collaborate with me", href: "#connect" },
   },
-
 ];
 
 function MilestoneCard({ item, align }: { item: Milestone; align: "left" | "right" }) {
@@ -94,8 +97,10 @@ function MilestoneCard({ item, align }: { item: Milestone; align: "left" | "righ
         <h3 className="mt-4 text-xl font-semibold text-foreground">{item.title}</h3>
         <ul className="mt-3 space-y-2">
           {item.points.map((p) => (
-            <li key={p} className="text-base leading-relaxed text-muted-foreground">
-              {p}
+            <li key={p.label} className="text-base leading-relaxed text-muted-foreground">
+              <span className="font-medium text-foreground">{p.label}</span>
+              <span className="mx-1.5 text-border">·</span>
+              {p.detail}
             </li>
           ))}
         </ul>
@@ -127,7 +132,7 @@ export function About() {
       id="about"
       eyebrow="About me"
       title="The path to sustainable impact"
-      description="Foundations, research, teaching and what comes next — a short journey through water resources and sustainability."
+      description="Foundations, research, teaching, and what comes next — a journey through water resources and sustainability."
     >
       <div className="relative">
         <span
