@@ -5,7 +5,6 @@ import { Link } from "@tanstack/react-router";
 
 const links = [
   { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#connect", label: "Connect" },
 ];
