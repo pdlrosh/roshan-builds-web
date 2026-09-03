@@ -97,10 +97,10 @@ function MilestoneCard({ item, align }: { item: Milestone; align: "left" | "righ
         <h3 className="mt-4 text-xl font-semibold text-foreground">{item.title}</h3>
         <ul className="mt-3 space-y-2">
           {item.points.map((p) => (
-            <li key={p.label} className="text-base leading-relaxed text-muted-foreground">
+            <li key={p.label} className="flex flex-wrap items-baseline gap-x-1.5 text-base leading-relaxed text-muted-foreground">
               <span className="font-medium text-foreground">{p.label}</span>
-              <span className="mx-1.5 text-border">·</span>
-              {p.detail}
+              <span aria-hidden="true" className="text-border">·</span>
+              <span className="whitespace-nowrap">{p.detail}</span>
             </li>
           ))}
         </ul>
