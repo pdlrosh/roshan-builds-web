@@ -59,8 +59,9 @@ const after: Milestone[] = [
       "Water-sensitive urban systems and climate-resilient hydrology",
       "Chair, IWA-YWP Nepal — building the next generation of water professionals",
     ],
-    link: { label: "Collaborate with me", href: "#contact" },
+    link: { label: "Collaborate with me", href: "#connect" },
   },
+
 ];
 
 function MilestoneCard({ item, align }: { item: Milestone; align: "left" | "right" }) {
